@@ -28,6 +28,6 @@ class TaskEventListener
     {
         // dd($event);
         // print_r($event);
-        echo $event->message;
+        // echo $event->message;
     }
 }

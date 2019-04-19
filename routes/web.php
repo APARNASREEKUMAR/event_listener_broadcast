@@ -17,3 +17,10 @@ Route::get('/', function () {
 Route::get('event',function(){
 	event(new App\Events\TaskEvent('Hey We have a Task Event to be listened'));
 });
+Route::get('listen',function(){
+	// return "here";
+	return view ('listenBroadcast');
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
